@@ -29,7 +29,7 @@ Please make sure to include the following components in your kubernetes cluster:
 ## 5. Pipelining
 You need to create a pipeline through Jenkins or Gitlab which **should be deployed within your cluster** in such a way that any time there is a change to the code in the github repository, it should build everything with most recent rolled out changes and roll it out in your cluster.
 
-## 6. Hosting
+## 6. Hosting (OPTIONAL)
 Once you are done with all the above milestones, you need to host your kubernetes cluster of microservices applications in some hosted instance like a DigitalOcean droplet. **Please make sure to use a free instance hosting platform. If any costs are incurred, the tech team will not be responsible for it.**
 
 The starter template given to you is the Microservices Architecture Diagram, some template deployment files and a basic express microservice with ping facility.
