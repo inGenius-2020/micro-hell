@@ -35,7 +35,7 @@ Once you are done with all the above milestones, you need to host your kubernete
 The starter template given to you is the Microservices Architecture Diagram, some template deployment files and a basic express microservice with ping facility.
 
 Architecture:
-![](./arch.png)
+![](./arch.jpg)
 
 Please adhere to the Code of Conduct.
 
