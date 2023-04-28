@@ -8,7 +8,7 @@ Let's set some milestones shall we now?
 ## 1. Create an User-Friendly Frontend
 You can use any frontend framework that you are comfortable with like Reactjs, Nextjs, etc
 ## 2. Create atleast 6 microservices with some functionality like Add Books, Remove Books, Return Books, Log lost books, etc.
-Here's the catch hehe, all 6 APIs should be created by 6 different programming langauges compatible with API Development like Go, Rust, Javascript and others or backend development frameworks. You can maximum have 2 microservices/APIs made through the same programming langauges.
+Here's the catch hehe, all 6 APIs should be created by 6 different programming langauges compatible with API Development like Go, Rust, Javascript, Python, Julia, etc. You can maximum have 2 microservices/APIs made through the same programming langauges.
 ## 3. Make respective running docker implementations for running all 6 microservices!
 Make a dockerfile for running all 6 microservices and make sure to expose a port within the Dockerfile so that you can see whether the API is running on localhost!
 ## 4. Kubernetes Deployment 
