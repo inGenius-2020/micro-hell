@@ -12,14 +12,31 @@ Here's the catch hehe, all 6 APIs should be created by 6 different programming l
 ## 3. Make respective running docker implementations for running all 6 microservices!
 Make a dockerfile for running all 6 microservices and make sure to expose a port within the Dockerfile so that you can see whether the API is running on localhost!
 ## 4. Kubernetes Deployment 
-You need to deploy all microservices and frontends to Minikube or Kind and you need to connect all pods or deployments in such a way that they can communicate. Once done, you should be able to connect to the frontend service through localhost and test whether everything is up and running!
+You need to deploy all microservices and frontends and DB to Minikube or Kind and you need to connect all pods or deployments in such a way that they can communicate. Once done, you should be able to connect to the frontend service through localhost and test whether everything is up and running!
 
 You need to figure out a way (It's a tool. That's the hint) to route the request from every page or frontend click to the respective microservice. This should be deployed and configured in your kubernetes cluster itself.
+
+All deployments have to be in YAML file.
+
+Please make sure to include the following components in your kubernetes cluster:
+- Deployment
+- Service (Node Port or LoadBalancer acc to developer convenience)
+- Persistent Volume
+- Persistent Volume Claim
+- ConfigMap (For env variables)
+- Secrets (this is weak! Use sealedsecrets for brownie points)
 
 ## 5. Pipelining
 You need to create a pipeline through Jenkins or Gitlab which **should be deployed within your cluster** in such a way that any time there is a change to the code in the github repository, it should build everything with most recent rolled out changes and roll it out in your cluster.
 
 ## 6. Hosting
 Once you are done with all the above milestones, you need to host your kubernetes cluster of microservices applications in some hosted instance like a DigitalOcean droplet. **Please make sure to use a free instance hosting platform. If any costs are incurred, the tech team will not be responsible for it.**
+
+The starter template given to you is the Microservices Architecture Diagram, some template deployment files and a basic express microservice with ping facility.
+
+Architecture:
+![](./arch.png)
+
+Please adhere to the Code of Conduct.
 
 Let's see if you are up for the challenge!
